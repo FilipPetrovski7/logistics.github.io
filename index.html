@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+      let slideIndex = 3;
+      const slideCount = document.querySelectorAll('.carousel-slide img').length;
+      const visibleSlides = 7; 
+      
+      function showSlides() {
+          let slides = document.querySelector('.carousel-slide');
+          let dots = document.querySelectorAll('.dot');
+      
+          for (let i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(' active', '');
+          }
+          dots[slideIndex].className += ' active';
+      
+          let transformValue = -(slideIndex * (100 / visibleSlides));
+          slides.style.transform = `translateX(${transformValue}%)`;
+      }
+      
+      function currentSlide(n) {
+          slideIndex = n;
+          showSlides();
+      }
+      
+      document.addEventListener("DOMContentLoaded", function() {
+          showSlides();
+      
+          let dots = document.querySelectorAll('.dot');
+          dots.forEach((dot, index) => {
+              dot.addEventListener('click', () => {
+                  currentSlide(index);
+              });
+          });
+      });
+      
+          </script>
+      </head>
+<body>
+
+<section id="banner" class="banner">
+    <div class="banner-content">
+        <h1>WE CONNECT YOUR COMPANY <br> TO A WORLD OF OPPORTUNITIES</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, saepe. <br>Sapiente non, voluptas quisquam repellendus dolor sunt at accusantium nulla.</p>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <div class="who-we-are">
+        <img src="Pictures\Mission & Vision Pictures\7809433-1536x1536.jpg" alt="Company Image">
+        <div>
+            <h2>Who we are</h2>
+            <p>We are a dedicated team offering comprehensive logistics solutions tailored to your business needs.</p>
+        </div>
+    </div>
+    <div class="card-container">
+
+			<div class="card"> <h3>OVERLAND</h3><div class="card__content">
+				<div class="img-container">
+				  <img src="Pictures/Service Pictures/8615007-1-1536x1024.jpg" alt="product-image" width="300" />
+				</div>				 
+				  <p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+					perferendis? Doloribus officia delectus animi quia unde neque quam
+					quae corporis, et explicabo nesciunt ab dolores nobis, architecto
+				  </p>
+				</div>
+			  </div>
+				<div class="card"> <h3>AIR FREIGHT</h3><div class="card__content">
+          <div class="img-container">
+            <img src="Pictures/Service Pictures/7302016-1024x683.jpg" alt="product-image" width="300" />
+          </div>				 
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+            perferendis? Doloribus officia delectus animi quia unde neque quam
+            quae corporis, et explicabo nesciunt ab dolores nobis, architecto
+            </p>
+          </div>
+          </div>
+			  	<div class="card"> <h3>SEA FREIGHT</h3><div class="card__content">
+            <div class="img-container">
+              <img src="Pictures/Service Pictures/5889673-1536x1024.jpg" alt="product-image" width="300" />
+            </div>				 
+              <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              perferendis? Doloribus officia delectus animi quia unde neque quam
+              quae corporis, et explicabo nesciunt ab dolores nobis, architecto
+              </p>
+            </div>
+            </div>
+				  <br></br>
+          <div class="card"> <h3>RAIL FREIGHT</h3><div class="card__content">
+            <div class="img-container">
+              <img src="Pictures/Service Pictures/4351373-1536x1536.jpg" widht="300" alt="product-image" width="300" />
+            </div>				 
+              <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              perferendis? Doloribus officia delectus animi quia unde neque quam
+              quae corporis, et explicabo nesciunt ab dolores nobis, architecto
+              </p>
+            </div>
+            </div>
+          	<div class="card"> <h3>CUSTOM CLEARANCE ASSISTANCE</h3><div class="card__content">
+              <div class="img-container">
+                <img src="Pictures/Service Pictures/5215745-1024x1024.jpg" widht="300" alt="product-image" width="300" />
+              </div>				 
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                perferendis? Doloribus officia delectus animi quia unde neque quam
+                quae corporis, et explicabo nesciunt ab dolores nobis, architecto
+                </p>
+              </div>
+              </div>
+            	<div class="card"> <h3>IMPORT & EXPORT</h3><div class="card__content">
+                <div class="img-container">
+                  <img src="Pictures/Service Pictures/4351373-1536x1536.jpg" width="300" alt="product-image"/>
+                </div>				 
+                  <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                  perferendis? Doloribus officia delectus animi quia unde neque quam
+                  quae corporis, et explicabo nesciunt ab dolores nobis, architecto
+                  </p>
+                </div>
+                </div>
+          
+    </div>
+    <div class="services-footer">
+        <h3>Not sure which solution fits your business needs?</h3>
+        <button class="cta-button">Talk to an expert</button>
+    </div>
+</section>
+
+
+<section id="client-feedback" class="client-feedback">
+    <div class="feedback-content">
+        <h2>What our clients have to say</h2>
+    <br></br>
+        <div class="feedback-cards">
+            <div class="feedback-card">
+                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ipsum ducimus esse non quia, quas, laudantium obcaecati sunt, doloribus alias cupiditate. Eligendi quibusdam eveniet architecto sit debitis porro, iure illo laborum magni fuga natus quidem voluptate unde repudiandae minima laboriosam quisquam labore ab obcaecati rem cumque quia modi. Est, ducimus.
+                </p><div class="client-info">
+                <img src="Pictures/Testimonials/depositphotos_19714321-stock-photo-young-happy-smiling-business-man.jpg" alt="Client Image">
+                
+                <p>Jane Smith
+                  <br>Company XYZ</p>
+                </div>
+            </div>
+            <div class="feedback-card">
+            <p>    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum assumenda, autem consequatur molestias magnam? Animi optio repellendus, architecto ut ipsa ratione aliquid voluptatem 
+              eligendi modi inventore eveniet earum! Provident blanditiis deserunt rem consequatur accusantium error nesciunt ducimus architecto culpa officiis
+               dolores voluptatem ipsum, explicabo magni laudantium excepturi vel omnis.</p>
+                <div class="client-info">
+                <img src="Pictures/Testimonials/main-thumb-15912495-200-asitjrodhgqyvtlmxjaaoyjtobnocvas.jpeg" alt="Client Image">
+                
+                    <p>  Jane Smith
+                    <br>  Company XYZ</p>
+                </div>
+            </div>
+          </div>
+        <h3>We love to hear from our clients<br>experience an unforgettable collaboration with us</h3>
+        <button class="cta-button">Schedule an appointment</button>
+    </div>
+</section>
+
+<section class="company-info">
+  <div class="expectations">
+
+      <h2>WHAT YOU CAN EXPECT BY PARTNERING WITH US</h2>
+      <div class="grid">
+          <div class="expectation-item">
+              <i class="fas fa-dollar-sign"></i>
+              <p>Competitive Pricing</p>
+          </div>
+          <div class="expectation-item">
+              <i class="fas fa-book-open"></i>
+              <p>Expert Knowledge</p>
+          </div>
+          <div class="expectation-item">
+              <i class="fas fa-file-invoice-dollar"></i>
+              <p>Accurate Invoicing</p>
+          </div>
+          <div class="expectation-item">
+              <i class="fas fa-truck"></i>
+              <p>Fast and Reliable Service</p>
+          </div>
+          <div class="expectation-item">
+              <i class="fas fa-cogs"></i>
+              <p>Superior Custom Service</p>
+          </div>
+          <div class="expectation-item">
+              <i class="fas fa-clock"></i>
+              <p>Real Time Tracking</p>
+          </div>
+          <div class="expectation-item">
+              <i class="fas fa-plane"></i>
+              <p>International Freight Forwarding</p>
+          </div>
+          <div class="expectation-item">
+              <i class="fas fa-network-wired"></i>
+              <p>World-Wide Network</p>
+          </div>
+          <div class="expectation-item">
+              <i class="fas fa-hourglass-half"></i>
+              <p>Save Time</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="partners">
+    <h2>OUR PARTNERS</h2>
+    <hr>
+    <br>
+    <div class="sponsor-carousel">
+        <div class="carousel-wrapper">
+            <div class="carousel-slide">
+                <img src="Pictures/Partners/binet-logo1.png_hhhh-removebg-preview.png" alt="Sponsor 1">
+                <img src="Pictures/Partners/croped_400_x_400-removebg-preview.png" alt="Sponsor 2">
+                <img src="Pictures/Partners/header-header-cmc_logo_new-01_s_2021_a-removebg-preview-1.png" alt="Sponsor 3">
+                <img src="Pictures/Partners/hidromak.png" alt="Sponsor 4">
+                <img src="Pictures/Partners/partner.png" alt="Sponsor 5">
+                <img src="Pictures/Partners/partner2.png" alt="Sponsor 6">
+                <img src="Pictures/Partners/rorrr-removebg-preview.png" alt="Sponsor 7">
+            </div>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+    </div>
+	
+    <div class="mission-vision">
+        <div class="mission">
+            <h2>Our mission</h2>
+            <img src="Pictures/Mission & Vision Pictures/5167309-1536x1536.jpg" alt="Mission Image">
+            <p>To provide unparalleled logistics services that enhance your business efficiency.</p>
+        </div>
+        <div class="vision">
+            <h2>Our vision</h2>
+            <img src="Pictures/Mission & Vision Pictures/7809433-1536x1536.jpg" alt="Vision Image">
+            <p>To be the leading logistics provider known for innovation and customer satisfaction.</p>
+        </div>
+      </div><div class="ourvalues"><h2>Our values</h2><br></div>
+    <div class="values">
+      
+        <div class="value">
+          
+            <img src="Icons/Values/core-values-creative.png.png" alt="Value Icon">
+            <h3>Integrity</h3>
+            <p>We uphold the highest standards of integrity in all our actions.</p>
+        </div>
+        <div class="value">
+            <img src="Icons/Values/core-values-relationships.png.png" alt="Value Icon">
+            <h3>Customer Focus</h3>
+            <p>We are committed to meeting our customers' needs and exceeding their expectations.</p>
+        </div>
+        <div class="value">
+            <img src="Icons/Values/core-values-trust.png.png" alt="Value Icon">
+            <h3>Innovation</h3>
+            <p>We strive for continuous improvement and innovation in our services.</p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+  <div class="dimmed-background">
+      <div class="footer-content">
+          <div class="left-column">
+              <h2>GET IN TOUCH</h2>
+              <div class="get-in-touch">
+                  <p><i class="fas fa-phone"></i> Phone number:<br>
+                  +389 70 334 058</p>
+                  <p><i class="fas fa-phone"></i> Phone number:<br>
+                  +389 71 334 061</p>
+                  <p><i class="fas fa-envelope"></i> Email address:<br>
+                  info@skpforwarding.mk</p>
+                  <p><i class="fas fa-envelope"></i> Email address:<br>
+                  skpforwarding@gmail.com</p>
+              </div>
+              <hr>
+              <div class="map">
+                  <h2>OUR LOCATION:</h2>
+                  <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+          </div>
+          <div class="right-column">
+              <div class="contact-form">
+                  <form action="submit-form.php" method="post">
+                      <div class="form-group">
+                          <label for="first_name">First Name:<span class="mandatory"> *</span></label>
+                          <input type="text" id="first_name" name="first_name" placeholder="Name" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="last_name">Last Name:<span class="mandatory"> *</span></label>
+                          <input type="text" id="last_name" name="last_name" placeholder="Surname" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="phone">Phone Number:<span class="mandatory"> *</span></label>
+                          <input type="text" id="phone" name="phone" placeholder="Phone number" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="email">Email Address:<span class="mandatory"> *</span></label>
+                          <input type="email" id="email" name="email" placeholder="Email" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="company">Company:<span class="mandatory"> *</span></label>
+                          <input type="text" id="company" name="company" placeholder="Company" required>
+                      </div>
+                      <button type="submit" class="cta-button">Send</button>
+                  </form>
+              </div>
+          </certer>
+          <div class="social-media">
+              <h5>Follow us:</h5>
+              <a href="https://facebook.com" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://youtube.com" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+              <a href="https://instagram.com" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
